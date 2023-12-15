@@ -39,15 +39,6 @@
     text-decoration: none;
     font-size: 40px;
   }
-
-
-  main {
-    /* position: relative; */
-  }
-
-  pre {
-    overflow: auto;
-  }
   
   footer {
     color: var(--blue);
@@ -68,8 +59,9 @@
     margin-right: 10%;
   }
 
-  .about{
-    padding: 10%;
+  .about, .contact{
+    padding: 5%;
+    font-size:30px;
   }
 
   .workCards {
@@ -91,8 +83,8 @@
   }
 
   .card header {
-    margin-top: -20px;
-    margin-left: -10px;
+    /* margin-top: -20px;
+    margin-left: -10px;*/
     width: 350px;
     background-color: var(--blue);
     color:white;
@@ -101,6 +93,8 @@
     /* border-style: double; */
     border-radius: 8px 8px 0 0;
     transition: all 0.5s ease-in-out;
+    font-size: 30px;
+    padding-left: 20px;
   }
 
   .card:hover, .card:hover header  {
@@ -111,7 +105,15 @@
   
   .outterbox {
     /*width: 100%;*/
-    color: var(--blue);
+    color: white;
+    background-color: var(--blue);
+    margin-top: -40px;
+  }
+
+  .outterbox p {
+    font-size: 35px;
+    padding-top: 20px;
+    padding-left: 20px;
   }
 
   .innerbox img{
@@ -127,7 +129,19 @@
     padding: 10px;
     max-width: 100%;
   }
+
+  .contact ul{
+      display: flex;
+      justify-content: space-around;
+      min-width: 300px;
+      color:black;
+      list-style-type: none;
+  }
   
+  .contactList li a{
+    color:black;
+  }
+
   @media screen and (max-width:992px) {
     .card {
         flex: 1 0 50%;
